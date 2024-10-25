@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-25T12:05:20 CDT" name="Suite" finished-at="2024-10-25T12:05:34 CDT" duration-ms="14191">
+    <groups>
+    </groups>
+    <test started-at="2024-10-25T12:05:20 CDT" name="Test" finished-at="2024-10-25T12:05:34 CDT" duration-ms="14191">
+      <class name="TestNG.OrangeHRMtestcase">
+        <test-method signature="openapp()[pri:1, instance:TestNG.OrangeHRMtestcase@3f6f6701]" started-at="2024-10-25T12:05:20 CDT" name="openapp" finished-at="2024-10-25T12:05:28 CDT" duration-ms="8409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openapp -->
+        <test-method signature="testlogo()[pri:2, instance:TestNG.OrangeHRMtestcase@3f6f6701]" started-at="2024-10-25T12:05:28 CDT" name="testlogo" finished-at="2024-10-25T12:05:31 CDT" duration-ms="3147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogo -->
+        <test-method signature="login()[pri:3, instance:TestNG.OrangeHRMtestcase@3f6f6701]" started-at="2024-10-25T12:05:31 CDT" name="login" finished-at="2024-10-25T12:05:33 CDT" duration-ms="1298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="Close()[pri:4, instance:TestNG.OrangeHRMtestcase@3f6f6701]" started-at="2024-10-25T12:05:33 CDT" name="Close" finished-at="2024-10-25T12:05:34 CDT" duration-ms="1216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+      </class> <!-- TestNG.OrangeHRMtestcase -->
+      <class name="TestNG.Firsttestcase">
+        <test-method signature="Openapp()[pri:1, instance:TestNG.Firsttestcase@59505b48]" started-at="2024-10-25T12:05:20 CDT" name="Openapp" finished-at="2024-10-25T12:05:20 CDT" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Openapp -->
+        <test-method signature="Login()[pri:2, instance:TestNG.Firsttestcase@59505b48]" started-at="2024-10-25T12:05:20 CDT" name="Login" finished-at="2024-10-25T12:05:20 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Logout()[pri:3, instance:TestNG.Firsttestcase@59505b48]" started-at="2024-10-25T12:05:20 CDT" name="Logout" finished-at="2024-10-25T12:05:20 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+      </class> <!-- TestNG.Firsttestcase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
