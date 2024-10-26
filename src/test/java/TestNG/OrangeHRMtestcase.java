@@ -24,7 +24,7 @@ public class OrangeHRMtestcase {
   WebDriver driver;
 	
 	@Test(priority=1)
-	void openapp()
+	void Openapp()
 	{
      driver=new ChromeDriver();	 
 	 driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
@@ -34,7 +34,7 @@ public class OrangeHRMtestcase {
 	}
 	
 	@Test(priority=2)
-	void testlogo() throws Exception
+	void Testlogo() throws Exception
 	{
 		Thread.sleep(3000);
 		boolean status=driver.findElement(By.xpath("//img[@alt='company-branding']")).isDisplayed();
@@ -42,7 +42,7 @@ public class OrangeHRMtestcase {
 	}
 	
 	@Test(priority=3)
-	void login()
+	void Login()
 	{
 		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
 		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin123");
@@ -50,7 +50,7 @@ public class OrangeHRMtestcase {
 	}
 	
 	@Test(priority=4)
-	void Close()
+	void Logout()
 	{
 		driver.quit();
 	}

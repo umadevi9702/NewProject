@@ -3,13 +3,12 @@
 <suite name="Failed suite [MySuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="MyTest(failed)">
     <classes>
-      <class name="TestNG.OrangeHRMtestcase">
+      <class name="TestNG.Uma">
         <methods>
-          <include name="openapp"/>
-          <include name="login"/>
-          <include name="testlogo"/>
+          <include name="checklogo"/>
+          <include name="openurl"/>
         </methods>
-      </class> <!-- TestNG.OrangeHRMtestcase -->
+      </class> <!-- TestNG.Uma -->
     </classes>
   </test> <!-- MyTest(failed) -->
 </suite> <!-- Failed suite [MySuite] -->
