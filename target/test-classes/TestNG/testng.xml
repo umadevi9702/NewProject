@@ -4,8 +4,9 @@
   <test name="Test">
     <classes>
       <class name="TestNG.OrangeHRMtestcase"/>
+      <class name="TestNG.Testautomationpractice"/>
+      <class name="TestNG.Googletestcase"/>
       <class name="TestNG.Firsttestcase"/>
-      <class name="TestNG.Uma"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

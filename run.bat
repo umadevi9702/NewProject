@@ -1,3 +1,3 @@
 
-cd  C:\Automation\NewProject
+cd  C:\Automation\Myworkspaces\NewProject
 mvn test
