@@ -1,6 +1,9 @@
 package Classwork;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.WebDriver;
 
 public class Day1_Classwork {
@@ -8,7 +11,7 @@ public class Day1_Classwork {
 	public static void main(String[] args) {
 		
 		
-		//ChromeDriver driver=new ChromeDriver();
+		WebDriverManager.chromedriver().setup();
 		
 		WebDriver driver=new ChromeDriver();
 		// Open Url https://demo.opencart.com/

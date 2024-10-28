@@ -6,7 +6,9 @@
       <class name="TestNG.Firsttestcase"/>
       <class name="TestNG.OrangeHRMtestcase"/>   
       <class name="TestNG.Testautomationpractice"/>
-      <class name="TestNG.Googletestcase"/>        
+      <class name="TestNG.Googletestcase"/>  
+      <class name="Homeworks.U1"/>
+      <class name="Homeworks.Uma1"/>      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

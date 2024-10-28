@@ -3,15 +3,24 @@ package TestNG;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Googletestcase {
 	
+	
+	
+	
 	WebDriver driver;
+	
 	
 	@Test(priority=1)
 	void Openurl()
 	{
+		
+		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.get("https://www.google.com/");
 		System.out.println("URL Opened....");	

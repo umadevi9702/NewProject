@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Testautomationpractice {
 	
 	WebDriver driver;
@@ -14,6 +16,8 @@ public class Testautomationpractice {
 	@Test(priority=1)
 	void openurl()
 	{
+		
+		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.get("https://testautomationpractice.blogspot.com/");
 		driver.manage().window().maximize();
