@@ -3,12 +3,15 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="TestNG.Firsttestcase"/>
-      <class name="TestNG.OrangeHRMtestcase"/>   
-      <class name="TestNG.Testautomationpractice"/>
-      <class name="TestNG.Googletestcase"/>  
-      <class name="Homeworks.U1"/>
-      <class name="Homeworks.Uma1"/>      
+                <class name="TestNG.Firsttestcase"/>
+                <class name="TestNG.OrangeHRMtestcase"/>   
+                <class name="TestNG.Testautomationpractice"/>
+                <class name="TestNG.Googletestcase"/>  
+                <class name="Homeworks.U1"/>
+                <class name="Homeworks.T2"/>
+                <class name="Homeworks.U_2"/>
+                <class name="Homeworks.A1"/>
+                <class name="Homeworks.Uma1"/>      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
@@ -17,3 +20,5 @@
 
 
 
+     
+     

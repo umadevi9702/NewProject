@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+  <test name="A1">
     <classes>
-      <class name="TestNG.Googletestcase"/>
-      <class name="TestNG.OrangeHRMtestcase"/>
-      <class name="TestNG.Testautomationpractice"/>
+      <class name="Homeworks.T2"/>
       <class name="Homeworks.U1"/>
+      <class name="Homeworks.U_2"/>
+      <class name="Homeworks.A1"/>
       <class name="Homeworks.Uma1"/>
-      <class name="TestNG.Firsttestcase"/>      
     </classes>
-  </test> <!-- Test -->
+  </test> <!-- A1 -->
 </suite> <!-- Suite -->
