@@ -1,4 +1,4 @@
-package Homeworks;
+package GoogleHomeworks;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 

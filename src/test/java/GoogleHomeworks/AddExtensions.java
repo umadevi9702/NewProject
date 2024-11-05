@@ -1,4 +1,4 @@
-package Homeworks;
+package GoogleHomeworks;
 
 import java.io.File;
 import java.time.Duration;
