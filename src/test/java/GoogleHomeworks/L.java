@@ -13,64 +13,56 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Dd1 {
+public class L {
 	
 	WebDriver driver;
 	
-	
   @Test(priority=1)
-  public void fDd1() throws InterruptedException {
-	 
+  public void Validate() throws InterruptedException {
+	  
 	  ChromeOptions opt=new ChromeOptions();
 	  opt.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
 	  File file=new File("C:\\Automation\\Myworkspaces\\Files\\CRX Files\\SelectorsHub-XPath.crx");
 	  opt.addExtensions(file);
+	  
+	  
 	  
 	  WebDriverManager.chromedriver().setup();
 	  driver=new ChromeDriver(opt);
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	  driver.get("https://www.google.com/");
 	  System.out.println("Message: "+driver.getTitle());
-	  
 	  driver.manage().window().maximize();
-	  System.out.println("Window Maximized");
-	  
+	  System.out.println("Window maximized");
 	  driver.findElement(By.xpath("//textarea[@id='APjFqb']")).sendKeys("selenium");
-	  System.out.println("Message: Selenium text printed");
+	  System.out.println("Selenium text printed");
 	  Thread.sleep(3000);
+	  List<WebElement> list=driver.findElements(By.xpath("//div[contains(@class, 'wM6W7d')]//span"));
+	  System.out.println("Total list from dropdown:"  +list.size());
+	  for(int i=0;i<=list.size();i++)
+	  {
+		  System.out.println(list.get(i).getText());
+		  String text=list.get(i).getText();
+		  if(text.equals("selenium foods"))
+		  {
+			  list.get(i).click();
+			  System.out.println("Message:"+driver.getTitle());
+			  break;
+		  }
+		  
+		  
+	  }
 	  
-	 List<WebElement> list= driver.findElements(By.xpath("//div[contains(@class, 'wM6W7d')]//span"));
-	 System.out.println("Total list from the dropdown: "  +list.size());
-	 
-	 for(int i=0; i<=list.size();i++)
-	 {
-		System.out.println(list.get(i).getText()); 
-		
-		String text=list.get(i).getText();
-		
-			if(text.contains("selenium foods")) 
-			{
-			
-				list.get(i).click();
-				break;
-				
-		    }
-		 
-	
-		 
-	 }
-	 
-	
-	 
-	 
-	 driver.quit();
-	 
+	  String text=driver.findElement(By.xpath("//div[contains(text(),'Forums')]")).getText();
+	  if(text.equals(text))
+	  {System.out.println("Test Pass: Forums text catched");}
+	  
+	  else 
+	  {System.out.println("Test Fail");}
 	  
 	  
 	  
-	  
-	  
-	  
+	  driver.quit();
 	  
 	  
 	  
@@ -78,19 +70,4 @@ public class Dd1 {
 	  
 	  
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 }

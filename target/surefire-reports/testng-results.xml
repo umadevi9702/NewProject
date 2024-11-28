@@ -1,101 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-01T15:06:14 CDT" name="Suite" finished-at="2024-11-01T15:07:16 CDT" duration-ms="62236">
+  <suite started-at="2024-11-22T15:48:19 CST" name="Suite" finished-at="2024-11-22T15:50:34 CST" duration-ms="134665">
     <groups>
     </groups>
-    <test started-at="2024-11-01T15:06:14 CDT" name="Test" finished-at="2024-11-01T15:07:16 CDT" duration-ms="62236">
-      <class name="TestNG.OrangeHRMtestcase">
-        <test-method signature="Openapp()[pri:1, instance:TestNG.OrangeHRMtestcase@4135c3b]" started-at="2024-11-01T15:06:14 CDT" name="Openapp" finished-at="2024-11-01T15:06:20 CDT" duration-ms="5730" status="PASS">
+    <test started-at="2024-11-22T15:48:19 CST" name="Test" finished-at="2024-11-22T15:50:34 CST" duration-ms="134665">
+      <class name="GoogleHomeworks.H">
+        <test-method signature="Hf()[pri:1, instance:GoogleHomeworks.H@130c12b7]" started-at="2024-11-22T15:49:05 CST" name="Hf" finished-at="2024-11-22T15:49:16 CST" duration-ms="10495" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Openapp -->
-        <test-method signature="Testlogo()[pri:2, instance:TestNG.OrangeHRMtestcase@4135c3b]" started-at="2024-11-01T15:06:20 CDT" name="Testlogo" finished-at="2024-11-01T15:06:23 CDT" duration-ms="3116" status="PASS">
+        </test-method> <!-- Hf -->
+      </class> <!-- GoogleHomeworks.H -->
+      <class name="GoogleHomeworks.I">
+        <test-method signature="If()[pri:1, instance:GoogleHomeworks.I@5e600dd5]" started-at="2024-11-22T15:49:16 CST" name="If" finished-at="2024-11-22T15:49:26 CST" duration-ms="10640" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Testlogo -->
-        <test-method signature="Login()[pri:3, instance:TestNG.OrangeHRMtestcase@4135c3b]" started-at="2024-11-01T15:06:23 CDT" name="Login" finished-at="2024-11-01T15:06:24 CDT" duration-ms="1299" status="PASS">
+        </test-method> <!-- If -->
+      </class> <!-- GoogleHomeworks.I -->
+      <class name="GoogleHomeworks.D">
+        <test-method signature="Df()[pri:1, instance:GoogleHomeworks.D@54e1c68b]" started-at="2024-11-22T15:48:19 CST" name="Df" finished-at="2024-11-22T15:48:33 CST" duration-ms="13297" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="Logout()[pri:4, instance:TestNG.OrangeHRMtestcase@4135c3b]" started-at="2024-11-01T15:06:25 CDT" name="Logout" finished-at="2024-11-01T15:06:25 CDT" duration-ms="671" status="PASS">
+        </test-method> <!-- Df -->
+      </class> <!-- GoogleHomeworks.D -->
+      <class name="GoogleHomeworks.E">
+        <test-method signature="fE()[pri:1, instance:GoogleHomeworks.E@4f80542f]" started-at="2024-11-22T15:48:33 CST" name="fE" finished-at="2024-11-22T15:48:43 CST" duration-ms="10294" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Logout -->
-      </class> <!-- TestNG.OrangeHRMtestcase -->
-      <class name="TestNG.Firsttestcase">
-        <test-method signature="Openapp()[pri:1, instance:TestNG.Firsttestcase@18078bef]" started-at="2024-11-01T15:06:14 CDT" name="Openapp" finished-at="2024-11-01T15:06:14 CDT" duration-ms="13" status="PASS">
+        </test-method> <!-- fE -->
+      </class> <!-- GoogleHomeworks.E -->
+      <class name="GoogleHomeworks.F">
+        <test-method signature="Ff()[pri:1, instance:GoogleHomeworks.F@576d5deb]" started-at="2024-11-22T15:49:26 CST" name="Ff" finished-at="2024-11-22T15:49:39 CST" duration-ms="12136" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Openapp -->
-        <test-method signature="Login()[pri:2, instance:TestNG.Firsttestcase@18078bef]" started-at="2024-11-01T15:06:14 CDT" name="Login" finished-at="2024-11-01T15:06:14 CDT" duration-ms="4" status="PASS">
+        </test-method> <!-- Ff -->
+      </class> <!-- GoogleHomeworks.F -->
+      <class name="GoogleHomeworks.G">
+        <test-method signature="Gf()[pri:1, instance:GoogleHomeworks.G@5d534f5d]" started-at="2024-11-22T15:49:39 CST" name="Gf" finished-at="2024-11-22T15:49:48 CST" duration-ms="9760" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="Logout()[pri:3, instance:TestNG.Firsttestcase@18078bef]" started-at="2024-11-01T15:06:14 CDT" name="Logout" finished-at="2024-11-01T15:06:14 CDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-      </class> <!-- TestNG.Firsttestcase -->
-      <class name="Homeworks.U1">
-        <test-method signature="A1()[pri:0, instance:Homeworks.U1@34a3d150]" started-at="2024-11-01T15:06:33 CDT" name="A1" finished-at="2024-11-01T15:06:41 CDT" duration-ms="7796" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- A1 -->
-      </class> <!-- Homeworks.U1 -->
-      <class name="TestNG.Testautomationpractice">
-        <test-method signature="openurl()[pri:1, instance:TestNG.Testautomationpractice@6302bbb1]" started-at="2024-11-01T15:06:25 CDT" name="openurl" finished-at="2024-11-01T15:06:29 CDT" duration-ms="3400" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openurl -->
-        <test-method signature="checklogo()[pri:2, instance:TestNG.Testautomationpractice@6302bbb1]" started-at="2024-11-01T15:06:29 CDT" name="checklogo" finished-at="2024-11-01T15:06:29 CDT" duration-ms="75" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checklogo -->
-        <test-method signature="close()[pri:3, instance:TestNG.Testautomationpractice@6302bbb1]" started-at="2024-11-01T15:06:29 CDT" name="close" finished-at="2024-11-01T15:06:29 CDT" duration-ms="711" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- TestNG.Testautomationpractice -->
-      <class name="TestNG.Googletestcase">
-        <test-method signature="Openurl()[pri:1, instance:TestNG.Googletestcase@31304f14]" started-at="2024-11-01T15:06:29 CDT" name="Openurl" finished-at="2024-11-01T15:06:33 CDT" duration-ms="3182" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Openurl -->
-        <test-method signature="Checklogo()[pri:2, instance:TestNG.Googletestcase@31304f14]" started-at="2024-11-01T15:06:33 CDT" name="Checklogo" finished-at="2024-11-01T15:06:33 CDT" duration-ms="119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Checklogo -->
-        <test-method signature="Logout()[pri:3, instance:TestNG.Googletestcase@31304f14]" started-at="2024-11-01T15:06:33 CDT" name="Logout" finished-at="2024-11-01T15:06:33 CDT" duration-ms="539" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-      </class> <!-- TestNG.Googletestcase -->
-      <class name="Homeworks.U_2">
-        <test-method signature="f()[pri:0, instance:Homeworks.U_2@5c6648b0]" started-at="2024-11-01T15:06:51 CDT" name="f" finished-at="2024-11-01T15:06:59 CDT" duration-ms="7598" status="PASS">
+        </test-method> <!-- Gf -->
+      </class> <!-- GoogleHomeworks.G -->
+      <class name="GoogleHomeworks.A1">
+        <test-method signature="f()[pri:0, instance:GoogleHomeworks.A1@70e9c95d]" started-at="2024-11-22T15:49:55 CST" name="f" finished-at="2024-11-22T15:50:05 CST" duration-ms="9949" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-      </class> <!-- Homeworks.U_2 -->
-      <class name="Homeworks.T2">
-        <test-method signature="f()[pri:0, instance:Homeworks.T2@2a4fb17b]" started-at="2024-11-01T15:06:41 CDT" name="f" finished-at="2024-11-01T15:06:51 CDT" duration-ms="10001" status="PASS">
+      </class> <!-- GoogleHomeworks.A1 -->
+      <class name="GoogleHomeworks.A">
+        <test-method signature="Af()[pri:1, instance:GoogleHomeworks.A@4d5650ae]" started-at="2024-11-22T15:50:05 CST" name="Af" finished-at="2024-11-22T15:50:20 CST" duration-ms="14273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Af -->
+      </class> <!-- GoogleHomeworks.A -->
+      <class name="GoogleHomeworks.B">
+        <test-method signature="Bf()[pri:1, instance:GoogleHomeworks.B@60bd273d]" started-at="2024-11-22T15:48:43 CST" name="Bf" finished-at="2024-11-22T15:48:54 CST" duration-ms="11293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bf -->
+      </class> <!-- GoogleHomeworks.B -->
+      <class name="GoogleHomeworks.U_2">
+        <test-method signature="f()[pri:0, instance:GoogleHomeworks.U_2@2e3967ea]" started-at="2024-11-22T15:49:48 CST" name="f" finished-at="2024-11-22T15:49:55 CST" duration-ms="7191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-      </class> <!-- Homeworks.T2 -->
-      <class name="Homeworks.A1">
-        <test-method signature="f()[pri:0, instance:Homeworks.A1@6f1de4c7]" started-at="2024-11-01T15:06:59 CDT" name="f" finished-at="2024-11-01T15:07:07 CDT" duration-ms="7887" status="PASS">
+      </class> <!-- GoogleHomeworks.U_2 -->
+      <class name="GoogleHomeworks.C">
+        <test-method signature="f()[pri:0, instance:GoogleHomeworks.C@121314f7]" started-at="2024-11-22T15:48:54 CST" name="f" finished-at="2024-11-22T15:49:05 CST" duration-ms="10979" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-      </class> <!-- Homeworks.A1 -->
-      <class name="Homeworks.Uma1">
-        <test-method signature="Google()[pri:0, instance:Homeworks.Uma1@459e9125]" started-at="2024-11-01T15:07:07 CDT" name="Google" finished-at="2024-11-01T15:07:16 CDT" duration-ms="9923" status="PASS">
+      </class> <!-- GoogleHomeworks.C -->
+      <class name="GoogleHomeworks.Uma1">
+        <test-method signature="Google()[pri:0, instance:GoogleHomeworks.Uma1@a38c7fe]" started-at="2024-11-22T15:50:20 CST" name="Google" finished-at="2024-11-22T15:50:34 CST" duration-ms="14231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Google -->
-      </class> <!-- Homeworks.Uma1 -->
+      </class> <!-- GoogleHomeworks.Uma1 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

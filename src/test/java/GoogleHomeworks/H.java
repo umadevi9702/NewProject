@@ -13,16 +13,14 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class E1 {
-	
-	WebDriver driver;
-	
+public class H {
+	WebDriver driver;	
 	
   @Test(priority=1)
-  public void fE1() throws InterruptedException {
+  public void Hf() throws InterruptedException {
 	  
 	  ChromeOptions opt=new ChromeOptions();
-	  opt.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});	  
+	  opt.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
 	  File file=new File("C:\\Automation\\Myworkspaces\\Files\\CRX Files\\SelectorsHub-XPath.crx");
 	  opt.addExtensions(file);
 	  
@@ -32,44 +30,29 @@ public class E1 {
 	  driver.get("https://www.google.com/");
 	  System.out.println("Message: "+driver.getTitle());
 	  driver.manage().window().maximize();
-	  System.out.println("Window Maximized");
-	  
+	  System.out.println("Message: Window Maximized");	  
 	  driver.findElement(By.xpath("//textarea[@id='APjFqb']")).sendKeys("selenium");
-	  System.out.println("Message: Selenium text print");
+	  System.out.println("Message: Selenium text printed");
 	  Thread.sleep(3000);
-	  
-	 List<WebElement> list=driver.findElements(By.xpath("//div[contains(@class, 'wM6W7d')]//span"));
-	 System.out.println("Total list from the dropdown: "  +list.size());
-	 
-	 for(int i=0;i<=list.size(); i++)
-	 {
+	  List<WebElement> list=driver.findElements(By.xpath("//div[contains(@class, 'wM6W7d')]//span"));
+	  System.out.println("Total list from dropdown: "  +list.size());
+	
+	  for(int i=0;i<=list.size();i++)
+	  {
 		 
 		 System.out.println(list.get(i).getText());
-		 
-		String text=list.get(i).getText();
-		
-		if(text.equals("selenium python"))
-		{
-			list.get(i).click();
-			break;
-		
-		}
-	 
-		 
-	 }
-	  
-	 driver.quit();
-	  
-	  		
+		  String text=list.get(i).getText();
+		  if(text.equals("selenium supplement"))
+		  {
+			  list.get(i).click();
+			  System.out.println("Message: "+driver.getTitle());
+			  break;
+		  }
+	  }
 	  
 	  
 	  
-	  
-	  
-	  
-	  
-	  
-	  
+	  driver.quit();
 	  
 	  
 	  

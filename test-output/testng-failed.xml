@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Homeworks.T2">
+      <class name="GoogleHomeworks.N">
         <methods>
-          <include name="f"/>
+          <include name="B"/>
+          <include name="launchApplication"/>
+          <include name="A"/>
         </methods>
-      </class> <!-- Homeworks.T2 -->
+      </class> <!-- GoogleHomeworks.N -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
