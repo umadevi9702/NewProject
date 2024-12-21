@@ -1,6 +1,7 @@
 package GoogleHomeworks;
 
 import java.io.File;
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -8,63 +9,77 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class E {
-	
 	WebDriver driver;
+	TestUtilities utils;
 	
-  @Test(priority=1)
-  public void fE() throws InterruptedException {
+  @BeforeMethod
+  public void beforeMethod() {
 	  
 	  ChromeOptions opt=new ChromeOptions();
-	  opt.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
-	  File file=new File("C:\\Automation\\Myworkspaces\\Files\\CRX Files\\SelectorsHub-XPath.crx");
+	  opt.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});	  
+	  File file=new File("\\Automation\\Myworkspaces\\Files\\CRX Files\\SelectorsHub-XPath.crx");
 	  opt.addExtensions(file);
-	  
+	  utils=new TestUtilities(driver, opt);
 	  WebDriverManager.chromedriver().setup();
 	  driver=new ChromeDriver(opt);
+	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));	  
+  }
+  
+  @Test(priority=1)
+  public void A() {
 	  driver.get("https://www.google.com/");
-	  System.out.println("Message: "+driver.getTitle());
+	  System.out.println(driver.getTitle());
 	  driver.manage().window().maximize();
-	  System.out.println("Message: Window maximized");
+  }
+  
+  
+  @Test(priority=2)
+  public void B() throws InterruptedException {
+	  A();
 	  driver.findElement(By.xpath("//textarea[@id='APjFqb']")).sendKeys("selenium");
-	  System.out.println("Message: Selenium text printed");
+	  System.out.println("Text printed");
 	  Thread.sleep(3000);
-	  List<WebElement> list=driver.findElements(By.xpath("//div[contains(@class, 'wM6W7d')]//span"));
+	  List<WebElement>list=driver.findElements(By.xpath("//div[contains(@class,'wM6W7d')]//span"));
 	  System.out.println("Total list from dropdown: "  +list.size());
-	  for(int i=0;i<=list.size();i++)
-	  {
+	  
+	  for(int i=0;i<=list.size();i++) {
+		  
 		  System.out.println(list.get(i).getText());
 		  String text=list.get(i).getText();
-		if(text.equals("selenium toxicity"))  
-		{
-			list.get(i).click();
-			System.out.println("Message: "+driver.getTitle());
-			break;
-			
-		}
 		  
+		  if(text.equals("selenium foods")) {
+			  list.get(i).click();
+			  System.out.println("Test pass: " +driver.getTitle());
+			  break;
+		  }
 			  
 	  }
-	  
-	  
-	  driver.quit();
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
+  
   }
+  
+  @Test(priority=3)
+  public void C() throws InterruptedException {
+	  
+	  B();
+	  String text=driver.findElement(By.xpath("//div[contains(text(),'Web')]")).getText();
+	  if(text.equals("Web")) {
+		  System.out.println("Test pass: " +driver.getTitle());
+	  }
+	  else {
+		  System.out.println("Test fail");
+	  }
+  }
+  
+  @AfterMethod
+  public void afterMethod() {
+	  driver.quit();
+  }
+
 }

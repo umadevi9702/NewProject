@@ -12,9 +12,9 @@
       <class name="GoogleHomeworks.F"/>
       <class name="GoogleHomeworks.G"/>
       <class name="GoogleHomeworks.U_2"/>
-      <class name="GoogleHomeworks.A1"/>
-      <class name="GoogleHomeworks.A"/>
+       <class name="GoogleHomeworks.A"/>
       <class name="GoogleHomeworks.Uma1"/>
+      <class name="GoogleHomeworks.O"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

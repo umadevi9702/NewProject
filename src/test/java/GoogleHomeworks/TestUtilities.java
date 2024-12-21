@@ -16,7 +16,7 @@ public class TestUtilities {
 	  
   }
   
-  public void launchApplication(String url) 
+  public void launchapplication(String url) 
   {
 	  driver.get(url);
 	  driver.manage().window().maximize();
