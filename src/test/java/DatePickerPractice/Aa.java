@@ -54,7 +54,7 @@ public class Aa {
 			}
 			
 			driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click();//next button
-			System.out.println("Next button clicked");
+			//System.out.println("Next button clicked");
 			//driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-w']")).click();//previous button
 			//System.out.println("Previous button clicked");
 		}
@@ -91,8 +91,8 @@ public class Aa {
 		
 		
 		
-		//driver.quit();
-		//System.out.println("Window closed");
+		driver.quit();
+		System.out.println("Window closed");
 		
 		
 		

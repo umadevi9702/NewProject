@@ -31,7 +31,7 @@ public class A {
 	  WebDriverManager.chromedriver().setup();
 	  driver=new ChromeDriver(opt);
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	  driver.manage().deleteAllCookies();	  
+	 // driver.manage().deleteAllCookies();	  
   }
   
   @Test(priority=1)
