@@ -43,18 +43,12 @@ public class iframe {
 	              e.printStackTrace();
 	          } 
 	          
-	         /* finally {
+	         finally {
 	              // Close the browser
 	              driver.quit();
-	          }*/
+	          }
 	          
 	      }
-	  
-
-	  
-	  
-	  
-	  
 	  
   }
   

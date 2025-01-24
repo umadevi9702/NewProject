@@ -3,8 +3,10 @@
 <suite name="Suite">
   <test name="Test">
     <classes>  
-     <class name="Classwork.iframe"/>
-      <class name="GoogleHomeworks.A"/>
+      <class name="Classwork.iframe"/>
+      <class name="GoogleHomeworks.E1"/>
+      <class name="GoogleHomeworks.G1"/>
+      <class name="GoogleHomeworks.F1"/>
       <class name="DatePickerPractice.A"/>
     </classes>
   </test> <!-- Test -->
